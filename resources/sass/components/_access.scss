@@ -1,0 +1,80 @@
+.scan {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30vh;
+    .code {
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        width: 300px;
+        padding: .2em;
+        margin-top: 2em;
+        border-radius: 3px;
+        font-size: 2em;
+        &.success {
+            border-color: $green;
+            color: $green;
+        }
+        &.danger {
+            border-color: $red;
+            color: $red;
+        }
+    }
+}
+
+.pass {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20vh;
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: 300px;
+    border-radius: 5px;
+    .access {        
+        border: 1px solid #ccc;
+        padding: .2em;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: 2em;
+        &.danger {
+            border-color: $red;
+            color: $red;
+        }
+        &.success {
+            border-color: $green;
+            color: $green;
+        }
+    }
+    .buttons {
+        margin: 1em;
+        .col-md-4 {
+            // padding-right: 2px;
+            // padding-left: 2px;
+        }
+        .num {
+            padding: 1em;
+            font-size: 1.3em;
+            // border: 1px solid #ccc;
+            cursor: pointer;
+            &:hover {
+                color: $green;
+            }
+        }
+        .row {
+            margin-top: 1em;
+        }
+    }
+    .button {
+        display: block;
+        padding: 1em;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        &.success {
+            border: 0;
+            background: $green;
+            color: #fff;
+        }
+    }
+}
